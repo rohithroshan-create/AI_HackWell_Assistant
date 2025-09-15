@@ -834,10 +834,9 @@ class EnhancedWellnessAssistant:
         display_enhanced_welcome_screen(assistant)
 
     def display_comprehensive_assessment(predictions, patient_data, assistant):
-"""Display comprehensive health assessment with real data insights"""
-if not predictions:
-st.error("Unable to generate risk predictions. Please check your input data.")
-return
+        if not predictions:
+            st.error("Unable to generate risk predictions. Please check your input data.")
+            return
     # Overall Health Score
     st.markdown("## 🎯 Overall Health Assessment")
     
