@@ -8,7 +8,6 @@ import plotly.express as px
 from datetime import datetime
 import warnings
 warnings.filterwarnings('ignore')
-Page configuration
 st.set_page_config(
 page_title="AI Wellness Assistant ",
 page_icon="🏥",
