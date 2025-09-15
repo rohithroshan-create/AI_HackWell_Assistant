@@ -1010,9 +1010,8 @@ class EnhancedWellnessAssistant:
                 st.markdown(f"**{timeframe}:** {actions}")
 
     def display_advanced_health_chatbot(predictions, patient_data, assistant):
-"""Advanced AI health assistant with real data context"""
-st.markdown("## 🤖 AI Health Consultant")
-st.markdown("Ask questions about your assessment, backed by real clinical data")
+        st.markdown("## 🤖 AI Health Consultant")
+        st.markdown("Ask questions about your assessment, backed by real clinical data")
     # Initialize chat history
     if 'chat_history' not in st.session_state:
         st.session_state.chat_history = []
@@ -1075,8 +1074,7 @@ st.markdown("Ask questions about your assessment, backed by real clinical data")
                 st.markdown("---")
 
     def generate_enhanced_ai_response(question, patient_data, predictions, assistant):
-"""Generate enhanced AI responses with real data insights"""
-question_lower = question.lower()
+        question_lower = question.lower()
     # Comparison questions
     if any(word in question_lower for word in ['compare', 'others', 'average', 'typical']):
         response = f"**Comparison to Population Data:**\n\n"
@@ -1180,8 +1178,7 @@ question_lower = question.lower()
         return generate_ai_response(question, patient_data, predictions)
 
     def display_enhanced_welcome_screen(assistant):
-"""Enhanced welcome screen with real data emphasis"""
-    col1, col2, col3 = st.columns([1, 2, 1])
+        col1, col2, col3 = st.columns([1, 2, 1])
     
     with col2:
         st.markdown("""
