@@ -1130,7 +1130,7 @@ class EnhancedWellnessAssistant:
         return response
 
     # Evidence-based intervention questions
-    elif any(word in question_lower for word in ['evidence', 'research', 'studies', 'proven']):
+    elif (word in question_lower for word in ['evidence', 'research', 'studies', 'proven']):
         response = "**Evidence Base for Recommendations:**\n\n"
 
         response += "**Heart Disease Prevention:**\n"
@@ -1153,7 +1153,7 @@ class EnhancedWellnessAssistant:
         return response
 
     # Dataset-specific questions
-    elif any(word in question_lower for word in ['dataset', 'data', 'study', 'research']):
+    elif (word in question_lower for word in ['dataset', 'data', 'study', 'research']):
         response = "**About the Clinical Datasets:**\n\n"
 
         for condition in predictions.keys():
