@@ -15,7 +15,7 @@ layout="wide",
 initial_sidebar_state="expanded"
 )
 
-st.markdown(
+st.markdown'''
 <style>
     .main-header {
         font-size: 3.5;
@@ -135,7 +135,7 @@ st.markdown(
         border-left: 3px solid #4caf50;
         margin: 0.5rem 0;
     }
-, unsafe_allow_html=True)
+''', unsafe_allow_html=True)
 class EnhancedRecommendationEngine:
     def __init__(self):
 self.recommendations = {
