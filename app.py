@@ -138,8 +138,8 @@ st.markdown('''
 ''', unsafe_allow_html=True)
 class EnhancedRecommendationEngine:
     def __init__(self):
-self.recommendations = {
-'heart_disease': {
+        self.recommendations = {
+            'heart_disease': {
 'high_risk': {
 'diet': [
 "🍫 Mediterranean Diet Focus: 40% reduction in heart events shown in real studies",
@@ -222,6 +222,7 @@ self.recommendations = {
 }
 }
 }
+
         # Real dataset information
         self.dataset_info = {
             'heart_disease': {
