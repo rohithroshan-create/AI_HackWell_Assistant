@@ -1245,4 +1245,4 @@ class EnhancedWellnessAssistant:
     def generate_ai_response(question, patient_data, predictions):
         return "I'm here to help with your health assessment. Please ask specific questions about your risk levels or recommendations."
 if __name__ == "__main__":
-main()
+    main()
