@@ -137,7 +137,7 @@ st.markdown(
     }
 , unsafe_allow_html=True)
 class EnhancedRecommendationEngine:
-def init(self):
+    def __init__(self):
 self.recommendations = {
 'heart_disease': {
 'high_risk': {
@@ -342,7 +342,7 @@ self.recommendations = {
         return explanations
 
 class EnhancedWellnessAssistant:
-def init(self):
+    def __init__(self):
 self.recommendation_engine = EnhancedRecommendationEngine()
 self.models = {}
 self.scalers = {}
@@ -736,7 +736,7 @@ self.load_models()
         
         return fig
 
-def main():
+    def main():
 # Enhanced Header with Dataset Information
 st.markdown('<h1 class="main-header">🏥 AI Wellness Assistant</h1>', unsafe_allow_html=True)
 st.markdown('<p class="sub-header">Powered by Real Public Healthcare Datasets</p>', unsafe_allow_html=True)
@@ -836,7 +836,7 @@ st.markdown('<p class="sub-header">Powered by Real Public Healthcare Datasets</p
         # Enhanced welcome screen
         display_enhanced_welcome_screen(assistant)
 
-def display_comprehensive_assessment(predictions, patient_data, assistant):
+    def display_comprehensive_assessment(predictions, patient_data, assistant):
 """Display comprehensive health assessment with real data insights"""
 if not predictions:
 st.error("Unable to generate risk predictions. Please check your input data.")
@@ -949,7 +949,7 @@ return
     # Advanced AI Health Consultation
     display_advanced_health_chatbot(predictions, patient_data, assistant)
 
-def display_enhanced_recommendations(predictions, patient_data, assistant):
+    def display_enhanced_recommendations(predictions, patient_data, assistant):
 """Display evidence-based recommendations with real data backing"""
 st.markdown("## 💡 Evidence-Based Wellness Plan")
 st.markdown("Recommendations based on clinical research and real patient outcomes")
@@ -1014,7 +1014,7 @@ st.markdown("Recommendations based on clinical research and real patient outcome
             for timeframe, actions in timeline_data.items():
                 st.markdown(f"**{timeframe}:** {actions}")
 
-def display_advanced_health_chatbot(predictions, patient_data, assistant):
+    def display_advanced_health_chatbot(predictions, patient_data, assistant):
 """Advanced AI health assistant with real data context"""
 st.markdown("## 🤖 AI Health Consultant")
 st.markdown("Ask questions about your assessment, backed by real clinical data")
@@ -1079,7 +1079,7 @@ st.markdown("Ask questions about your assessment, backed by real clinical data")
             if i < len(st.session_state.chat_history) - 1:
                 st.markdown("---")
 
-def generate_enhanced_ai_response(question, patient_data, predictions, assistant):
+    def generate_enhanced_ai_response(question, patient_data, predictions, assistant):
 """Generate enhanced AI responses with real data insights"""
 question_lower = question.lower()
     # Comparison questions
@@ -1184,7 +1184,7 @@ question_lower = question.lower()
     else:
         return generate_ai_response(question, patient_data, predictions)
 
-def display_enhanced_welcome_screen(assistant):
+    def display_enhanced_welcome_screen(assistant):
 """Enhanced welcome screen with real data emphasis"""
     col1, col2, col3 = st.columns([1, 2, 1])
     
@@ -1251,8 +1251,8 @@ def display_enhanced_welcome_screen(assistant):
         """)
 
 Helper function for backwards compatibility
-def generate_ai_response(question, patient_data, predictions):
+    def generate_ai_response(question, patient_data, predictions):
 """Fallback AI response function"""
 return "I'm here to help with your health assessment. Please ask specific questions about your risk levels or recommendations."
-if name == "main":
+if __name__ == "__main__":
 main()
