@@ -344,12 +344,12 @@ class EnhancedRecommendationEngine:
 
 class EnhancedWellnessAssistant:
     def __init__(self):
-self.recommendation_engine = EnhancedRecommendationEngine()
-self.models = {}
-self.scalers = {}
-self.feature_names = {}
-self.model_performance = {}
-self.load_models()
+        self.recommendation_engine = EnhancedRecommendationEngine()
+        self.models = {}
+        self.scalers = {}
+        self.feature_names = {}
+        self.model_performance = {}
+        self.load_models()
     def load_models(self):
         """Load real data trained models with enhanced error handling"""
         try:
