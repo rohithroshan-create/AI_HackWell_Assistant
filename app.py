@@ -14,7 +14,7 @@ page_icon="🏥",
 layout="wide",
 initial_sidebar_state="expanded"
 )
-Enhanced CSS for professional medical interface
+
 st.markdown("""
 <style>
     .main-header {
@@ -136,7 +136,6 @@ st.markdown("""
         margin: 0.5rem 0;
     }
 """, unsafe_allow_html=True)
-Enhanced Recommendation Engine with Real Data Insights
 class EnhancedRecommendationEngine:
 def init(self):
 self.recommendations = {
@@ -249,7 +248,6 @@ self.recommendations = {
         }
     
     def get_recommendations(self, condition, risk_level, patient_data=None):
-        """Get evidence-based recommendations from real data analysis"""
         if condition not in self.recommendations:
             return {"error": "Condition not supported"}
         
@@ -267,7 +265,6 @@ self.recommendations = {
         return base_recommendations
     
     def _personalize_recommendations(self, recommendations, patient_data, condition):
-        """Advanced personalization based on real clinical guidelines"""
         personalized = {k: v.copy() for k, v in recommendations.items()}
         
         age = patient_data.get('age', 50)
@@ -301,7 +298,6 @@ self.recommendations = {
         return personalized
     
     def get_risk_factors_explanation(self, condition, patient_data):
-        """Provide evidence-based risk factor explanations from real data"""
         explanations = []
         dataset_info = self.dataset_info[condition]
         
@@ -345,7 +341,6 @@ self.recommendations = {
         
         return explanations
 
-Enhanced Wellness Assistant with Real Data Integration
 class EnhancedWellnessAssistant:
 def init(self):
 self.recommendation_engine = EnhancedRecommendationEngine()
@@ -742,7 +737,6 @@ self.load_models()
         return fig
 
 def main():
-"""Enhanced main application with real data integration"""
 # Enhanced Header with Dataset Information
 st.markdown('<h1 class="main-header">🏥 AI Wellness Assistant</h1>', unsafe_allow_html=True)
 st.markdown('<p class="sub-header">Powered by Real Public Healthcare Datasets</p>', unsafe_allow_html=True)
