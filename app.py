@@ -738,20 +738,16 @@ class EnhancedWellnessAssistant:
         return fig
 
     def main():
-# Enhanced Header with Dataset Information
-st.markdown('<h1 class="main-header">🏥 AI Wellness Assistant</h1>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Powered by Real Public Healthcare Datasets</p>', unsafe_allow_html=True)
-    # Dataset badges
-    st.markdown("""
+        st.markdown('<h1 class="main-header">🏥 AI Wellness Assistant</h1>', unsafe_allow_html=True)
+        st.markdown('<p class="sub-header">Powered by Real Public Healthcare Datasets</p>', unsafe_allow_html=True)
+        st.markdown("""
     <div style="text-align: center; margin-bottom: 2rem;">
         <span class="dataset-badge">UCI Heart Disease Dataset</span>
         <span class="dataset-badge">Pima Indians Diabetes Database</span>
         <span class="dataset-badge">Cardiovascular Disease Dataset</span>
     </div>
     """, unsafe_allow_html=True)
-    
-    # Enhanced medical disclaimer
-    st.markdown("""
+        st.markdown("""
     <div class="warning-banner">
         <strong>⚕ Medical Disclaimer:</strong> This AI tool uses real clinical datasets for educational purposes only. 
         Models trained on UCI Heart Disease Dataset (Cleveland Clinic), Pima Indians Diabetes Database (NIH), 
