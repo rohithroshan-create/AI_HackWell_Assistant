@@ -135,7 +135,7 @@ st.markdown("""
         border-left: 3px solid #4caf50;
         margin: 0.5rem 0;
     }
-""", unsafe_allow_html=True)
+, unsafe_allow_html=True)
 class EnhancedRecommendationEngine:
 def init(self):
 self.recommendations = {
