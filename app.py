@@ -1242,7 +1242,6 @@ class EnhancedWellnessAssistant:
         - **Educational Purpose**: Supplement, don't replace, professional medical care
         """)
 
-Helper function for backwards compatibility
     def generate_ai_response(question, patient_data, predictions):
 """Fallback AI response function"""
 return "I'm here to help with your health assessment. Please ask specific questions about your risk levels or recommendations."
