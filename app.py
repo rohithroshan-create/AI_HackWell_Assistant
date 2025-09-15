@@ -18,10 +18,10 @@ initial_sidebar_state="expanded"
 st.markdown(
 <style>
     .main-header {
-        font-size: 3.5rem;
+        font-size: 3.5;
         color: #1e88e5;
         text-align: center;
-        margin-bottom: 1rem;
+        margin-bottom: 1;
         text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
         font-weight: bold;
     }
