@@ -15,7 +15,7 @@ layout="wide",
 initial_sidebar_state="expanded"
 )
 
-st.markdown'''
+st.markdown('''
 <style>
     .main-header {
         font-size: 3.5;
