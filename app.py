@@ -1076,8 +1076,8 @@ class EnhancedWellnessAssistant:
     def generate_enhanced_ai_response(question, patient_data, predictions, assistant):
         question_lower = question.lower()
     # Comparison questions
-    if any(word in question_lower for word in ['compare', 'others', 'average', 'typical']):
-        response = f"**Comparison to Population Data:**\n\n"
+        if any(word in question_lower for word in ['compare', 'others', 'average', 'typical']):
+            response = f"**Comparison to Population Data:**\n\n"
 
         for condition, pred_data in predictions.items():
             dataset_info = assistant.recommendation_engine.dataset_info[condition]
