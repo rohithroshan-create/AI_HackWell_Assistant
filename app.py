@@ -946,9 +946,8 @@ class EnhancedWellnessAssistant:
     display_advanced_health_chatbot(predictions, patient_data, assistant)
 
     def display_enhanced_recommendations(predictions, patient_data, assistant):
-"""Display evidence-based recommendations with real data backing"""
-st.markdown("## 💡 Evidence-Based Wellness Plan")
-st.markdown("Recommendations based on clinical research and real patient outcomes")
+        st.markdown("## 💡 Evidence-Based Wellness Plan")
+        st.markdown("Recommendations based on clinical research and real patient outcomes")
     # Priority recommendations based on highest risk
     if predictions:
         highest_risk_condition = max(predictions.items(), key=lambda x: x[1]['probability'])
