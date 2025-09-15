@@ -15,7 +15,7 @@ layout="wide",
 initial_sidebar_state="expanded"
 )
 
-st.markdown("""
+st.markdown(
 <style>
     .main-header {
         font-size: 3.5rem;
@@ -752,7 +752,7 @@ st.markdown('<p class="sub-header">Powered by Real Public Healthcare Datasets</p
     # Enhanced medical disclaimer
     st.markdown("""
     <div class="warning-banner">
-        <strong>⚕️ Medical Disclaimer:</strong> This AI tool uses real clinical datasets for educational purposes only. 
+        <strong>⚕ Medical Disclaimer:</strong> This AI tool uses real clinical datasets for educational purposes only. 
         Models trained on UCI Heart Disease Dataset (Cleveland Clinic), Pima Indians Diabetes Database (NIH), 
         and Cardiovascular Disease Dataset (70K+ patients). Results do not replace professional medical advice, 
         diagnosis, or treatment. Always consult qualified healthcare providers for medical decisions.
